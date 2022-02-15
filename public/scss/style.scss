@@ -1,0 +1,546 @@
+$border-nav: #e5e5e5;
+$font-color-dark: #262626;
+$font-color-lightDark: #595959;
+$font-color-lightGrey: #a6a6a6;
+$font-color-light: #fff;
+$font-color-secondery: #48974c;
+$main-color: #48974c;
+$footer-bgc: #404040;
+$icons-color: #cccccc;
+$light-bg-color: #efefef;
+$font-main: 'Cormorant Infant', serif;
+$font-secondery:  'PT Sans', sans-serif;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body{
+  position: relative;
+}
+.hiddenBody{
+  display: none;
+}
+// body::before{
+//   content: '';
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   background: url(/content/maket.png);
+//   background-size: cover;
+//   z-index: 999;
+//   opacity: 0.4;
+// }
+
+.mainTitle__container .slick-dots{
+  text-align: left;
+  bottom: -50px;
+  li{
+    background-color: #fff;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    opacity: 0.4;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  li button::before{
+    content: '';
+  }
+  .slick-active{
+    opacity: 1;
+  }
+}
+
+.button-dark{
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-secondery;
+  font-size: 14px;
+  font-weight: bold;
+  color: $font-color-light;
+  background-color: $main-color;
+}
+.button-light{
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: $font-secondery;
+  border: 2px solid $main-color;
+  color: $font-color-secondery;
+}
+.title{
+  font-family: $font-main;
+  font-size: 36px;
+}
+.subtitle{
+  font-size: 30px;
+  font-family: $font-main;
+  color: $font-color-dark;
+  font-style: italic;
+}
+.text{
+  font-family: $font-secondery;
+  line-height: 24px;
+  
+  font-size: 14px;
+}
+.text-font{
+  color: $font-color-lightDark;
+  font-family: $font-main;
+  text-align: center;
+  font-weight: regular;
+}
+.nav-bar-item{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $font-color-dark;
+  font-family: $font-secondery;
+  font-weight: regular;
+  font-size: 16px;
+  &-active{
+    color: $font-color-secondery;
+  }
+  &:hover{
+    color: $font-color-secondery;
+  }
+}
+.icon-svg{
+  color: $icons-color;
+
+  &:hover{
+    color: $font-color-secondery;
+  }
+}
+
+//*********************************************************************//
+
+.header{
+  width: 100%;
+  height: 211px;
+  display: flex;
+  flex-direction: column;
+
+  &__burger{
+    display: none;
+  }
+}
+
+.header-title{
+  width: 100%;
+  padding: 35px 0 45px 0;
+  display: flex;
+  row-gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar{
+
+  margin: 0 auto;
+  border-top: 1px solid $border-nav;
+  width: 1132px;
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  &__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+}
+
+.mainTitle{
+  width: 100%;
+  height: 579px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: url(/content/bg.png);
+  background-size: cover;
+
+  &__wrapper{
+    width: 1132px;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__container{
+    width: 552px;
+    padding: 40px;
+    margin-top: -50px;
+    background-color: #fff;
+  }
+  &__page{
+    width: 552px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+  }
+  &__title, &__text{
+    color: $font-color-lightDark;
+    
+  }
+  &__title{
+    max-width: 415px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+  }
+  &__text{
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: regular;
+  }
+}
+
+.mainContent{
+  width: 100%;
+  height: 1597px;
+  background-color: $light-bg-color;
+
+  &__wrapper{
+    width: 1134px;
+    padding: 30px 0 70px 0;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__newsBlock{
+    flex: 6;
+    height: 1415px;
+    position: relative;
+    &Container{
+      display: flex;
+      flex-direction: column;
+      row-gap: 70px;
+    }
+    &Item{
+      background-color: #fff;
+      max-height: 692px;
+      // max-width: 552px;
+      min-height: 100%;
+      padding: 25px;
+      &Photo{
+        object-fit: scale-down;
+        width: 100%;
+        height: auto;
+      }
+      &Date{
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: $font-color-lightGrey;
+        display: flex;
+        column-gap: 6px;
+        align-items: center;
+
+        span{
+          margin-top: 2px;
+        }
+      }    
+      &Title{
+        margin-top: 5px;
+      }
+      &Text{
+        
+        max-height: 150px;
+        overflow: hidden;
+        margin-top: 5px;
+        font-size: 16px;
+        color: $font-color-lightDark;
+        font-weight: regular;
+        line-height: 26px;
+      }
+      &Buttons{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &Social{
+        display: flex;
+        column-gap: 15px;
+        margin-top: 10px;
+        align-items: center;
+      }
+      &Button{
+        margin-top: 10px;
+        width: 157px;
+      }
+    }
+    &Button{
+      &Container{
+        padding: 25px;
+        
+      }
+      &-latestPosts{
+        width: 157px;      
+      }
+    }
+    
+  }
+
+  &__slider{
+    height: 1415px;
+    width: 100%;
+    flex: 6;
+    &Track{
+      width: 552px;
+      &Page, .slick-track{
+        width: 552px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    
+    .slick-initialized .slick-slide{
+      display: flex;
+    }
+    &Item{
+      max-width: 50%;
+      min-height: 351px;  
+      background: #fff;
+      border: 1px solid $light-bg-color;
+      padding: 25px;
+      
+      &Title{
+        margin-top: 7px;
+        font-size: 24px;  
+        color: $font-color-dark;
+      }
+
+      &Text{
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 26px;
+        color: $font-color-lightDark;
+        font-weight: bold;
+      }
+
+      &Button{
+        font-family: $font-secondery;
+        background-color: transparent;
+        display: flex;
+        text-transform: uppercase;
+        column-gap: 8px;
+        margin-top: 10px;
+        color: $main-color;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .slick-next{
+      right: 0;
+      top: auto;
+      bottom: -50px;
+    }
+
+    .arrow-next, .arrow-prev{
+      position: absolute;
+      bottom: 30px;
+      top:auto;
+      color: $font-color-dark;
+      z-index: 999;
+    }
+    .arrow-next{
+      right: 160px;
+    }
+    .arrow-prev{
+      left:0;
+    }
+    .slider-pages{
+      padding: 25px;
+      font-size: 16px;
+      line-height: 22px;
+      column-gap: 10px;
+      display: flex;
+
+      :nth-child(n+5){
+        display: none;
+      }
+      :last-child{
+        display: block;
+        
+        button{
+          margin-left: 25px;
+          position: relative;
+        }
+        button::before{
+          content: '...';
+          position: absolute;
+          
+          font-weight: bold;
+          left: -25px;
+        }        
+      }
+      
+      button{
+        width: 56px;
+        height: 56px;
+        background-color: $font-color-light;
+        color: $font-color-dark;
+
+        &::hover{
+          background-color: $main-color;
+          color: $font-color-light;
+        }
+      }
+      .slick-active button{
+        background-color: $main-color;
+        color: $font-color-light;
+      }
+      &::before{
+        content: none;
+      }
+    }
+  }
+
+}
+
+.building{
+  width: 100%;
+  height: 560px;
+  background: url(/content/building.png);
+  background-size: cover;
+  position: relative;
+  &__container{
+    width: 1134px;
+    margin: 0 auto;
+  }
+  &__wrapper{
+    position: absolute;
+    bottom: 70px;
+    display: flex;
+  }
+  &__input{
+    padding: 20px 20px;
+
+    &::placeholder{
+      color: $font-color-dark;
+      font-family: $font-secondery;
+      font-size: 18px;
+      font-weight: regular;
+    }
+  }
+  &__button{
+    width: 157px;
+  }
+}
+
+.advertisement{
+  width: 100%;
+  height: 401px;
+  padding: 70px 0;
+  background-color: $light-bg-color;
+
+  &__container{
+    width: 1134px;
+    margin: 0 auto;
+  }
+  &__wrapper{
+    display: flex;
+    column-gap: 30px;
+  }
+  &__facebook{
+    width: 100%;
+    padding: 25px 35px;
+    background-color: #fff;
+    
+    &Subtitle{
+      font-size: 24px;
+    }
+    &Target{
+      margin-top: 25px;
+    }
+  }
+}
+
+.footer{
+  width: 100%;
+  height: 350px;
+  background-color: $footer-bgc;
+
+  &__container{
+    width: 1134px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__main{
+    display: flex;
+    column-gap: 30px;
+  }
+  &__logo{
+    flex: 6;
+    color: $font-color-light;
+
+    &Title{
+      font-size: 36px;
+    }
+    &Text{
+      max-width: 358px;
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+      color: $font-color-light;
+    }
+  }
+  &__nav{
+    padding: 10px 0 0 30px;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    &Item{
+      color: $font-color-light;
+      font-family: $font-secondery;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+  }
+  &__social{
+    color: $icons-color;
+    flex: 2;
+    padding-top: 10px;
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__copyrights{
+    height: 50px;
+    border-top: 1px solid $light-bg-color;
+    display: flex;
+    align-items: center;
+
+    &Text{
+      color: $font-color-light;
+    }
+  }
+}
+
+@import './responsive.scss';

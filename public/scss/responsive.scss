@@ -1,0 +1,989 @@
+@media (max-width: 1440px){
+  .nav-bar{
+    width: 1000px;
+  }
+  .mainTitle__wrapper {
+    width: 1000px;
+  }
+  .mainContent{
+    &__wrapper{
+      width: 1000px;
+    }
+    &__newsBlock{
+      &Container{
+        row-gap: 70px;
+      }
+      &Button{
+        &Container{
+          padding: 25px 25px;
+          position: static;
+        }
+        &-latestPosts{
+          
+          padding: 20px 0;
+          
+          
+        }
+      }
+    }
+    &__newsBlockItem{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      &Text{
+        max-height: 230.5px;
+      }
+    }
+    &__newsBlockContainer{
+      max-width: 485px;
+      
+
+    }
+    &__newsBlockButtonContainer{
+      bottom: 75px;
+    }
+  }
+  .building__container{
+    width: 1000px;
+  }
+  .advertisement{
+    &__container{
+      width: 1000px;
+    }
+  }
+  .footer{
+    &__container{
+      width: 1000px;
+    }
+  }
+}
+
+@media (max-width:1280px){
+  .nav-bar{
+    width: 880px;
+  }
+  .mainTitle__wrapper {
+    width: 880px;
+  }
+
+  .mainContent{
+    height: auto;
+    &__wrapper{
+      width: 880px;
+      padding-bottom: 0;
+    }
+    &__newsBlock{
+      &Container{
+        row-gap: 30px;
+      }
+      &Item{
+        max-height: calc(50% - 15px);
+
+        &Text{
+          max-height: 133.5px;
+        }
+      }
+      &Button{
+        &Container{
+          padding: 25px 25px;
+          position: static;
+        }
+        &-latestPosts{
+          
+          padding: 20px 0;
+          
+          
+        }
+      }
+    }
+    &__newsBlockButtonContainer{
+      bottom: 65px;
+    }
+    &__slider{
+      width: 424px;
+      &Track{
+        width: 424px;
+      }
+      &Item{
+        max-width: 212px;
+        min-height: 310.5px;
+        &Title{
+          font-size: 18px;
+        }
+        &Text{
+          font-size: 12px;
+        }
+        &Photo{
+          width: 100%;
+          height: auto;
+        }
+      }
+      .arrow-next{
+        right: 30px;
+      }
+      .arrow-prev{
+        left:0;
+      }
+    }
+  }
+  
+  .building{
+    &__container{
+      width: 880px;
+      height: 100%;
+      position: relative;
+    }
+    &__wrapper{
+      left: 0;
+    }
+  }
+  .advertisement{
+    height: auto;
+    &__container{
+      width: 880px;
+    }
+    &__bannerTarget{
+      width: 660px;
+      height: auto;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .footer{
+    &__container{
+      width: 880px;
+    }
+    &__logoTitle{
+      font-size: 28px;
+    }
+    &__logoText{
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  .header-title{
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+  }
+  .header{
+    height: auto;
+    
+  }
+  .nav-bar{
+    width: 720px;
+    &-item{
+      font-size: 13px;
+    }
+  }
+
+  .mainTitle{
+    &__title{
+      font-size: 48px;
+    }
+    &__text{
+      font-size: 16px;
+    }
+    &__wrapper{
+      width: 720px;
+    }
+  }
+
+  .mainContent{
+    &__wrapper{
+      width: 720px;
+      column-gap: 20px;
+    }
+    &__newsBlock{
+      width: 350px;
+      height: 1220px;
+      &Container{
+        height: auto;
+      }
+      &Button{
+        &Container{
+          padding: 15px 25px;
+          position: static;
+        }
+        &-latestPosts{
+          
+          padding: 10px 0;
+          
+          
+        }
+      }
+      &Item{
+
+        &Buttons{
+          flex-direction: column;
+          justify-content: center;
+        }
+        &Text{
+          max-height: 133.5px;
+          line-height: 19px;
+        }
+        &Button{
+          padding: 10px 0;
+          
+        }
+      }
+    }
+
+    &__slider{
+      width: 350px;
+      height: 1300px;
+      &Item{
+        max-width: 170px;
+        max-height: 305px;
+        min-height: 305.3px;
+        padding: 10px;
+
+        &Text{
+          line-height: 16px;
+        }
+      }
+      .slider-pages{
+        padding: 15px 25px;
+      }
+      .arrow-next, .arrow-prev{
+        bottom: 15px;
+      }
+      .slider-pages > li > button{
+        padding: 10px 0;
+        height: auto;
+      }
+      #slick-slide-control13{
+        display: none;
+      }
+      .arrow-next{
+        right: 10px;
+      }
+      &Track{
+        width: 350px;
+      }
+    }
+  }
+
+  .building{
+    &__container{
+      width: 720px;
+    }
+  }
+  .advertisement{
+    &__container{
+      width: 720px;
+      
+    }
+    &__wrapper{
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    &__bannerTarget{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .footer{
+    &__container{
+      width: 720px;
+    }
+  }
+}
+@media (max-width:768px) {
+  .nav-bar{
+    display: none;
+  }
+
+  .header{
+    width: 410px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 10px;
+    &-title{
+      
+      padding: 0 0 0 0;
+      margin: 5px 0 0 0;
+      max-width: 250px;
+      .title{
+        
+        max-width: 250px;
+        font-size: 20px;
+        text-align: left;
+      }
+      .text{
+        
+        max-width: 250px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+      }
+    }
+    &__burger{
+      display: block;
+      text-decoration: none;
+      
+      &Btn{
+        background-color: transparent;
+      }
+    }
+    &__item{
+      text-align: center;
+      &Link{
+        
+        text-decoration: none;
+      }
+    }
+  }
+
+  .mainTitle{
+    height: 400px;
+    width: auto;
+    &__wrapper{
+      width: 410px;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &__text{
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__container{
+      padding: 30px;
+      margin: 0 auto;
+      width: 410px;
+    }
+    .slick-dots{
+      bottom: -30px;
+    }
+  }
+
+  .mainContent{
+    &__wrapper{
+      width: 410px;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    
+    &__newsBlock{
+      height: auto;
+      width: 410px;
+      margin: 0 auto;
+      row-gap: 10px;
+      
+      &Item{
+        &Title{
+          font-size: 24px;
+          line-height: 26px;
+        }
+        &Text{
+          font-size: 12px;
+          line-height: 14px;
+          max-height: 125px;
+        }
+      }
+      &ButtonContainer{
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-top: 10px;
+      }
+      
+    }
+
+    &__slider{
+      margin-top: 40px;
+      height: auto;
+      width: 410px;
+      &Track{
+        width: 410px;
+      }
+      #slick-slide-control13{
+        display: block;
+      }
+      &Item{
+        max-width: 205px;
+        min-height: auto;
+        max-height: auto;
+      }
+      .arrow-next{
+        right: 70px;
+      }
+      .slider-pages button{
+        padding: 6px 0;
+        width: 35px;
+      }
+    }
+  }
+
+  .building{
+    height: 250px;
+    width: auto;
+    &__container{
+      width: 410px;
+
+    }
+    &__input{
+      width: 100%;
+
+      &::placeholder{
+        font-size: 12px;
+      }
+    }
+    &__button{
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  .advertisement{
+    padding: 30px 0;
+    &__container{
+      width: 100%;
+    }
+    &__wrapper{
+      width: 410px;
+      margin: 0 auto;
+    }
+    &__facebook{
+      width: 100%;
+    }
+    &__bannerTarget{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .footer{
+    height: auto;
+    &__container{
+      width:410px;
+    }
+    &__main{
+      flex-direction: column;
+    }
+    &__nav{
+      padding: 0;
+      row-gap: 5px;
+
+      & a{
+        text-decoration: none;
+      }
+    }
+    &__copyrights{
+      margin-top: 20px;
+      &Text{
+        font-size: 8px;
+      }
+    }
+  }
+}
+@media (max-width:425px){
+  .nav-bar{
+    display: none;
+  }
+
+  .header{
+    width: 360px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 10px;
+    &-title{
+      
+      padding: 0 0 0 0;
+      margin: 5px 0 0 0;
+      max-width: 220px;
+      .title{
+        
+        max-width: 220px;
+        font-size: 20px;
+        text-align: left;
+      }
+      .text{
+        
+        max-width: 220px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+      }
+    }
+    &__burger{
+      display: block;
+      text-decoration: none;
+      
+      &Btn{
+        background-color: transparent;
+      }
+    }
+    &__item{
+      text-align: center;
+      &Link{
+        
+        text-decoration: none;
+      }
+    }
+  }
+
+  .mainTitle{
+    height: 400px;
+    width: auto;
+    &__wrapper{
+      width: 360px;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &__text{
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__container{
+      padding: 30px;
+      margin: 0 auto;
+      width: 360px;
+    }
+    .slick-dots{
+      bottom: -30px;
+    }
+  }
+
+  .mainContent{
+    &__wrapper{
+      width: 360px;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    
+    &__newsBlock{
+      height: auto;
+      width: 360px;
+      margin: 0 auto;
+      row-gap: 10px;
+      &Item{
+        &Title{
+          font-size: 24px;
+          line-height: 26px;
+        }
+        &Text{
+          font-size: 12px;
+          line-height: 14px;
+          max-height: 125px;
+        }
+      }
+      &ButtonContainer{
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-top: 10px;
+      }
+      
+    }
+
+    &__slider{
+      margin-top: 40px;
+      height: auto;
+      width: 360px;
+      &Track{
+        width: 360px;
+      }
+      #slick-slide-control13{
+        display: block;
+      }
+      &Item{
+        max-width: 180px;
+        min-height: auto;
+        max-height: auto;
+      }
+      .arrow-next{
+        right: 70px;
+      }
+      .slider-pages button{
+        padding: 6px 0;
+        width: 35px;
+      }
+    }
+  }
+
+  .building{
+    height: 250px;
+    width: auto;
+    &__container{
+      width: 360px;
+
+    }
+    &__input{
+      width: 100%;
+
+      &::placeholder{
+        font-size: 12px;
+      }
+    }
+    &__button{
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  .advertisement{
+    padding: 30px 0;
+    &__container{
+      width: 100%;
+    }
+    &__wrapper{
+      width: 360px;
+      margin: 0 auto;
+    }
+    &__facebook{
+      width: 100%;
+    }
+    &__bannerTarget{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .footer{
+    height: auto;
+    &__container{
+      width:360px;
+    }
+    &__main{
+      flex-direction: column;
+    }
+    &__nav{
+      padding: 0;
+      row-gap: 5px;
+
+      & a{
+        text-decoration: none;
+      }
+    }
+    &__copyrights{
+      margin-top: 20px;
+      &Text{
+        font-size: 8px;
+      }
+    }
+  }
+}
+@media (max-width:375px){
+  .nav-bar{
+    display: none;
+  }
+
+  .header{
+    width: 310px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 10px;
+    &-title{
+      
+      padding: 0 0 0 0;
+      margin: 5px 0 0 0;
+      max-width: 220px;
+      .title{
+        
+        max-width: 220px;
+        font-size: 20px;
+        text-align: left;
+      }
+      .text{
+        
+        max-width: 220px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+      }
+    }
+    &__burger{
+      display: block;
+      text-decoration: none;
+      
+      &Btn{
+        background-color: transparent;
+      }
+    }
+    &__item{
+      text-align: center;
+      &Link{
+        
+        text-decoration: none;
+      }
+    }
+  }
+
+  .mainTitle{
+    height: 400px;
+    width: auto;
+    &__wrapper{
+      width: 310px;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &__text{
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__container{
+      padding: 10px;
+      margin: 0 auto;
+      width: 310px;
+    }
+    .slick-dots{
+      bottom: -30px;
+    }
+  }
+
+  .mainContent{
+    &__wrapper{
+      width: 310px;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    
+    &__newsBlock{
+      height: auto;
+      width: 310px;
+      margin: 0 auto;
+      row-gap: 10px;
+      &Item{
+        &Title{
+          font-size: 24px;
+          line-height: 26px;
+        }
+        &Text{
+          font-size: 12px;
+          line-height: 14px;
+          max-height: 125px;
+        }
+      }
+      &ButtonContainer{
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-top: 10px;
+      }
+      
+    }
+
+    &__slider{
+      margin-top: 40px;
+      height: auto;
+      width: 310px;
+      &Track{
+        width: 310px;
+      }
+      &Item{
+        max-width: 155px;
+        min-height: auto;
+        max-height: auto;
+      }
+      #slick-slide-control13{
+        display: none;
+      }
+      .arrow-next{
+        right: 55px;
+      }
+      .slider-pages button{
+        padding: 6px 0;
+        width: 35px;
+      }
+    }
+  }
+
+  .building{
+    height: 250px;
+    width: auto;
+    &__container{
+      width: 310px;
+
+    }
+    &__input{
+      width: 100%;
+
+      &::placeholder{
+        font-size: 12px;
+      }
+    }
+    &__button{
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  .advertisement{
+    padding: 30px 0;
+    &__container{
+      width: 100%;
+    }
+    &__wrapper{
+      width: 310px;
+      margin: 0 auto;
+    }
+    &__facebook{
+      width: 100%;
+    }
+    &__bannerTarget{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .footer{
+    height: auto;
+    &__container{
+      width:310px;
+    }
+    &__main{
+      flex-direction: column;
+    }
+    &__nav{
+      padding: 0;
+      row-gap: 5px;
+
+      & a{
+        text-decoration: none;
+      }
+    }
+    &__copyrights{
+      margin-top: 20px;
+      &Text{
+        font-size: 8px;
+      }
+    }
+  }
+}
+@media (max-width:320px){
+ 
+
+  .header{
+    width: 270px;
+    &-title{
+      max-width: 200px;
+      .title{       
+        max-width: 200px;      
+      }
+      .text{
+        
+        max-width: 200px;     
+      }
+    }
+  }
+
+  .mainTitle{
+    &__wrapper{
+      width: 300px;
+    }
+    
+    &__container{
+      
+      width: 270px;
+    }
+  }
+
+  .mainContent{
+    &__wrapper{
+      width: 270px;
+    }
+    
+    &__newsBlock{
+      width: 270px;
+      
+    }
+
+    &__slider{
+      width: 270px;
+      &Track{
+        width: 270px;
+      }
+      &Item{
+        max-width: 135px;
+        min-height: auto;
+        max-height: auto;
+      }
+      .arrow-next{
+        right: 15px;
+      }
+      .slider-pages button{
+        padding: 6px 0;
+        width: 35px;
+      }
+    }
+  }
+
+  .building{
+    height: 250px;
+    width: auto;
+    &__container{
+      width: 270px;
+
+    }
+    &__input{
+      width: 100%;
+
+      &::placeholder{
+        font-size: 12px;
+      }
+    }
+    &__button{
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  .advertisement{
+    padding: 30px 0;
+    &__container{
+      width: 100%;
+    }
+    &__wrapper{
+      width: 270px;
+      margin: 0 auto;
+    }
+    &__facebook{
+      width: 100%;
+    }
+    &__bannerTarget{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .footer{
+    height: auto;
+    &__container{
+      width: 270px;
+    }
+    &__main{
+      flex-direction: column;
+    }
+    &__nav{
+      padding: 0;
+      row-gap: 5px;
+
+      & a{
+        text-decoration: none;
+      }
+    }
+    &__copyrights{
+      margin-top: 20px;
+      &Text{
+        font-size: 8px;
+      }
+    }
+  }
+}
