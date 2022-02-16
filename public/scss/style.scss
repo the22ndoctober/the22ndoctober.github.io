@@ -126,7 +126,7 @@ body{
 
 .header{
   width: 100%;
-  height: 211px;
+  height: auto;
   display: flex;
   flex-direction: column;
 
@@ -150,6 +150,7 @@ body{
   margin: 0 auto;
   border-top: 1px solid $border-nav;
   width: 1132px;
+  padding: 22.5px;
   height: 61px;
   display: flex;
   flex-direction: column;
@@ -171,7 +172,7 @@ body{
   display: flex;
   justify-content: center;
   overflow: hidden;
-  background: url(/content/bg.png);
+  background: url(../../content/bg.png);
   background-size: cover;
 
   &__wrapper{
@@ -234,13 +235,12 @@ body{
     &Container{
       display: flex;
       flex-direction: column;
-      row-gap: 70px;
+      row-gap: 30px;
     }
     &Item{
       background-color: #fff;
-      max-height: 692px;
-      // max-width: 552px;
-      min-height: 100%;
+      
+      
       padding: 25px;
       &Photo{
         object-fit: scale-down;
@@ -264,7 +264,7 @@ body{
       }
       &Text{
         
-        max-height: 150px;
+        max-height: 155px;
         overflow: hidden;
         margin-top: 5px;
         font-size: 16px;
@@ -421,7 +421,7 @@ body{
 .building{
   width: 100%;
   height: 560px;
-  background: url(/content/building.png);
+  background: url(../../content/building.png);
   background-size: cover;
   position: relative;
   &__container{
@@ -520,7 +520,11 @@ body{
       color: $font-color-light;
       font-family: $font-secondery;
       text-transform: uppercase;
+      text-decoration: none;
       font-size: 16px;
+      &:hover{
+        color:$main-color;
+      }
     }
   }
   &__social{

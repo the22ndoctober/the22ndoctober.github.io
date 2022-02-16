@@ -1,4 +1,8 @@
 
+$(window).on('load', ()=> {
+  $('.hiddenBody').removeClass('hiddenBody');
+})
+
 $('.mainTitle__container').slick({
   dots: true,
   infinite: true,
@@ -6,7 +10,7 @@ $('.mainTitle__container').slick({
   speed: 500,
   fade: true,
   cssEase: 'linear'
-});
+})
 
 $('.mainContent__sliderTrack').slick({
   infinite: false,
@@ -22,9 +26,6 @@ $('.mainContent__sliderTrack').slick({
   //                   var targetImage = slick.$slides.eq(index).find('img').attr('src');
   //                   return '<img src=" ' + targetImage + ' "/>';
   //               }
-});
+})
 
 
-$(window).on('load', ()=> {
-  $('.hiddenBody').removeClass('hiddenBody');
-});
